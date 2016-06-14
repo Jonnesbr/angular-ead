@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="scripts/angular.min.js"></script>
+    <script src="App/main.js"></script>
+    <script src="App/controllers/produtoController.js"></script>
+</head>
+<body ng-controller="produtoController">
+    <div class="container">
+        <h1 class="text-center">Gerenciamento de Produto 3.0</h1>
+        <h2>Lista de Produtos</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class=" thumbnail">
+                    <img class="img-responsive center-block" ng-src="{{produto.Url}}" alt="tomato">
+                    <div class="caption">
+                        <h3>{{produto.Name}}</h3>
+                        <p>{{produto.Category}}</p>
+                        <p><a href="#" class="btn btn-primary" role="button">detalhes</a> <a href="#" class="btn btn-default" role="button">editar</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
